@@ -25,17 +25,17 @@ const createGrid = (size = 256, line = 15) => {
         const coord = i * size / (line + 1);
         const isMedian = i === (line + 1) / 2;
 
-        const newXLine = document.createElement('div');
-        newXLine.style.left = `${coord}px`;
-        newXLine.style.width = `${size}px`;
-        if (isMedian) newXLine.style.borderColor = 'var(--red)';
-        newGrid.appendChild(newXLine);
+        const newXAxis = document.createElement('div');
+        newXAxis.style.left = `${coord}px`;
+        newXAxis.style.width = `${size}px`;
+        if (isMedian) newXAxis.style.borderColor = 'var(--red)';
+        newGrid.appendChild(newXAxis);
 
-        const newYLine = document.createElement('div');
-        newYLine.style.top = `${coord}px`;
-        newYLine.style.height = `${size}px`;
-        if (isMedian) newXLine.style.borderColor = 'var(--blue)';
-        newGrid.appendChild(newYLine);
+        const newYAxis = document.createElement('div');
+        newYAxis.style.top = `${coord}px`;
+        newYAxis.style.height = `${size}px`;
+        if (isMedian) newXAxis.style.borderColor = 'var(--blue)';
+        newGrid.appendChild(newYAxis);
     }
 
     return newGrid;
