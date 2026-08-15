@@ -13,12 +13,14 @@ const createGrid = (size = 256, lines = 16) => {
         newXLine.classList.add('x-line');
         newXLine.style.left = `${coord}px`;
         newXLine.style.width = `${size}px`;
+        newXLine.style.borderColor = 'var(--red)';
         newGrid.appendChild(newXLine);
 
         const newYLine = document.createElement('div');
         newYLine.classList.add('y-line');
         newYLine.style.top = `${coord}px`;
         newYLine.style.height = `${size}px`;
+        newYLine.style.borderColor = 'var(--blue)';
         newGrid.appendChild(newYLine);
     }
 
