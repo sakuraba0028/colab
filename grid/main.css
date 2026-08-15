@@ -1,0 +1,9 @@
+/* shared必須 */
+.gird {
+    position: relative;
+}
+
+.x-line, .y-line {
+    position: absolute;
+    border: 1px solid var(--gray);
+}
